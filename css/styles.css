@@ -372,9 +372,15 @@ h1, h2, h3, h4 {
 .hero-inner {
     display: grid;
     grid-template-columns: 50% 50%;
-    align-items: center;
+    align-items: stretch;
     gap: 48px;
     padding-bottom: 90px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero-title {
