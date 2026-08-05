@@ -575,7 +575,7 @@ h1, h2, h3, h4 {
 
 .about-grid {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 48px;
 }
 
@@ -602,12 +602,26 @@ h1, h2, h3, h4 {
 }
 
 .subtitle {
+    display: inline-block;
+    position: relative;
     font-size: 14px;
     font-weight: 800;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--red);
+    padding-bottom: 10px;
     margin-bottom: 12px;
+}
+
+.subtitle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--red);
 }
 
 .section-title {
