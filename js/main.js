@@ -15,6 +15,7 @@
     var setNavOpen = function (open) {
         if (!mainNav || !navToggle) return;
         mainNav.classList.toggle("is-open", open);
+        navToggle.classList.toggle("is-open", open);
         navToggle.setAttribute("aria-expanded", String(open));
         document.body.classList.toggle("nav-locked", open);
     };
