@@ -413,13 +413,15 @@ h1, h2, h3, h4 {
 .social-proof {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
 }
 
 .social-proof p {
     font-size: 14px;
     font-weight: 600;
     color: var(--navy);
+    max-width: 150px;
+    line-height: 1.4;
 }
 
 .avatars {
@@ -437,7 +439,7 @@ h1, h2, h3, h4 {
     font-size: 12px;
     font-weight: 700;
     color: var(--white);
-    margin-left: -12px;
+    margin-left: -18px;
     overflow: hidden;
 }
 
