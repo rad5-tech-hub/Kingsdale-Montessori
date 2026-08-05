@@ -717,6 +717,9 @@ h1, h2, h3, h4 {
 
 .learn-card {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     overflow: hidden;
     padding: 32px 26px;
     border-radius: var(--radius-card);
@@ -735,16 +738,35 @@ h1, h2, h3, h4 {
 .learn-card--green  { background: var(--card-green);  border-top-color: #2E9E4F; }
 .learn-card--purple { background: var(--card-purple); border-top-color: #7B4FC6; }
 
+.learn-icon {
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    font-size: 26px;
+    color: var(--white);
+    margin-bottom: 16px;
+    box-shadow: var(--shadow-card);
+}
+
+.learn-card--blue .learn-icon   { background: var(--blue); }
+.learn-card--red .learn-icon    { background: var(--red); }
+.learn-card--green .learn-icon  { background: #2E9E4F; }
+.learn-card--purple .learn-icon { background: #7B4FC6; }
+
 .learn-title {
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.04em;
+    text-align: center;
     color: var(--navy);
     margin-bottom: 20px;
 }
 
 .learn-list {
+    align-self: stretch;
     display: grid;
     gap: 10px;
 }
