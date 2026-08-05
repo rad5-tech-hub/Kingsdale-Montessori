@@ -948,16 +948,32 @@ h1, h2, h3, h4 {
 }
 
 .program-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     background: var(--white);
     border: 1px solid var(--border);
     border-radius: var(--radius-card);
     overflow: hidden;
-    padding: 26px 22px 0;
+    padding: 28px 24px 0;
     box-shadow: var(--shadow-card);
     transition: transform var(--t), box-shadow var(--t);
 }
+
+.program-card::before {
+    content: "";
+    position: absolute;
+    top: -34px;
+    right: -34px;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    opacity: 0.08;
+    pointer-events: none;
+}
+
+.program-card:nth-child(odd)::before { background: var(--blue); }
+.program-card:nth-child(even)::before { background: var(--red); }
 
 .program-card:hover {
     transform: translateY(-8px);
@@ -969,7 +985,7 @@ h1, h2, h3, h4 {
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .program-title--blue { color: var(--blue); }
@@ -981,7 +997,7 @@ h1, h2, h3, h4 {
     border-radius: var(--radius-pill);
     font-size: 12px;
     font-weight: 700;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 }
 
 .age-badge--blue { background: #E8F1FF; color: var(--blue); }
@@ -991,13 +1007,14 @@ h1, h2, h3, h4 {
     font-size: 13.5px;
     line-height: 1.6;
     color: var(--muted);
-    margin-bottom: 22px;
+    margin-bottom: 26px;
 }
 
 .program-photo {
-    margin-inline: -22px;
-    height: 150px;
+    margin-inline: -24px;
+    height: 170px;
     margin-top: auto;
+    clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
     background-size: cover;
     background-position: center;
 }
