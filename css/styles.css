@@ -743,10 +743,10 @@ h1, h2, h3, h4 {
     place-items: center;
     width: 64px;
     height: 64px;
+    flex-shrink: 0;
     border-radius: 50%;
     font-size: 26px;
     color: var(--white);
-    margin-bottom: 16px;
     box-shadow: var(--shadow-card);
 }
 
@@ -755,14 +755,20 @@ h1, h2, h3, h4 {
 .learn-card--green .learn-icon  { background: #2E9E4F; }
 .learn-card--purple .learn-icon { background: #7B4FC6; }
 
+.learn-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
 .learn-title {
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    text-align: center;
+    text-align: left;
     color: var(--navy);
-    margin-bottom: 20px;
 }
 
 .learn-list {
