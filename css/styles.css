@@ -819,10 +819,27 @@ h1, h2, h3, h4 {
 }
 
 .montessori-flow {
+    position: relative;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 22px;
+}
+
+.montessori-flow::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #C6D1E0;
+    z-index: 0;
+}
+
+.montessori-flow > * {
+    position: relative;
+    z-index: 1;
 }
 
 .flow-item {
@@ -1014,7 +1031,7 @@ h1, h2, h3, h4 {
     margin-inline: -24px;
     height: 170px;
     margin-top: auto;
-    clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 34%, 100% 0, 100% 100%, 0 100%);
     background-size: cover;
     background-position: center;
 }
@@ -1637,6 +1654,10 @@ h1, h2, h3, h4 {
     }
 
     .flow-arrow {
+        display: none;
+    }
+
+    .montessori-flow::before {
         display: none;
     }
 
