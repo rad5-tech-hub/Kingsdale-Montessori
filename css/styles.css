@@ -399,7 +399,7 @@ h1, h2, h3, h4 {
     max-width: 52ch;
     font-size: 16.5px;
     line-height: 1.75;
-    color: var(--muted);
+    color: #2E3B57;
     margin-bottom: 32px;
 }
 
