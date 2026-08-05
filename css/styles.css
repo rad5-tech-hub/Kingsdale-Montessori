@@ -788,7 +788,7 @@ h1, h2, h3, h4 {
 
 .learn-list i {
     color: var(--blue);
-    font-size: 16px;
+    font-size: 9px;
 }
 
 .learn-card--red .learn-list i    { color: var(--red); }
@@ -820,9 +820,9 @@ h1, h2, h3, h4 {
 
 .montessori-flow {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    gap: 18px;
+    gap: 22px;
 }
 
 .flow-item {
@@ -870,7 +870,10 @@ h1, h2, h3, h4 {
 .fp-6 { background: linear-gradient(135deg, #00A3E0, #5ce1e6); }
 
 .flow-arrow {
-    font-size: 22px;
+    align-self: flex-start;
+    margin-top: 51px;
+    font-size: 18px;
+    line-height: 1;
     color: #B9C4D4;
     flex-shrink: 0;
 }
