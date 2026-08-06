@@ -1561,33 +1561,13 @@ h1, h2, h3, h4 {
         font-size: 40px;
     }
 
-    /* Hero → stacked & centered on tablet and mobile */
+    /* Hero → stays side-by-side (flexed) on tablet */
     .hero-inner {
-        grid-template-columns: 1fr;
-        gap: 48px;
+        gap: 32px;
     }
 
-    .hero-visual {
-        order: -1;
-    }
-
-    .hero-content,
-    .hero-content > * {
-        align-items: center;
-        align-self: center;
-        text-align: center;
-    }
-
-    .hero-content .hero-text {
-        margin-inline: auto;
-    }
-
-    .hero-actions {
-        justify-content: center;
-    }
-
-    .social-proof {
-        justify-content: center;
+    .hero-photo {
+        width: min(520px, 100%);
     }
 
     /* Nav → modern dropdown menu */
@@ -1867,6 +1847,37 @@ h1, h2, h3, h4 {
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 44px;
+    }
+}
+
+/* ===== Large phones / small tablets (640px) — hero stacks ===== */
+@media (max-width: 640px) {
+    .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-visual {
+        order: -1;
+    }
+
+    .hero-content,
+    .hero-content > * {
+        align-items: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .hero-content .hero-text {
+        margin-inline: auto;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .social-proof {
+        justify-content: center;
     }
 }
 
