@@ -964,12 +964,12 @@ h1, h2, h3, h4 {
 }
 
 .program-card {
-    position: relative;
     display: flex;
     align-items: stretch;
     background: var(--white);
     border: 1px solid var(--border);
     border-radius: var(--radius-card);
+    overflow: hidden;
     box-shadow: var(--shadow-card);
     transition: transform var(--t), box-shadow var(--t);
 }
@@ -980,8 +980,6 @@ h1, h2, h3, h4 {
 }
 
 .program-body {
-    position: relative;
-    z-index: 1;
     flex: 1;
     min-width: 0;
     display: flex;
@@ -1021,13 +1019,8 @@ h1, h2, h3, h4 {
 }
 
 .program-photo {
-    position: absolute;
-    top: -10%;
-    bottom: -10%;
-    right: 0;
+    flex: 0 0 46%;
     width: 46%;
-    z-index: 0;
-    border-radius: 0 var(--radius-card) var(--radius-card) 0;
     background-size: cover;
     background-position: center;
     clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
@@ -1666,11 +1659,6 @@ h1, h2, h3, h4 {
     .programs-grid {
         grid-template-columns: repeat(3, 1fr);
         row-gap: 32px;
-    }
-
-    .program-photo {
-        position: static;
-        align-self: stretch;
     }
 
     .why-panel {
