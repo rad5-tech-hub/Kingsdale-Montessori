@@ -1058,14 +1058,30 @@ h1, h2, h3, h4 {
 }
 
 .why-title {
+    position: relative;
+    width: fit-content;
     font-size: 32px;
     font-weight: 800;
     line-height: 1.12;
     text-transform: uppercase;
     letter-spacing: 0.04em;
     color: var(--navy);
-    margin-bottom: 16px;
+    padding-top: 18px;
+    margin-bottom: 30px;
 }
+
+.why-title::before,
+.why-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 40%;
+    height: 3px;
+    background: var(--red);
+}
+
+.why-title::before { top: 0; }
+.why-title::after { bottom: -14px; }
 
 .why-intro p {
     font-size: 14.5px;
@@ -1671,6 +1687,16 @@ h1, h2, h3, h4 {
         padding-right: 0;
     }
 
+    .why-title {
+        margin-inline: auto;
+    }
+
+    .why-title::before,
+    .why-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     .steps {
         flex-wrap: wrap;
         row-gap: 28px;
@@ -1885,6 +1911,12 @@ h1, h2, h3, h4 {
 
     .why-title {
         font-size: 27px;
+    }
+
+    .why-title::before,
+    .why-title::after {
+        left: 0;
+        transform: none;
     }
 
     .step {
