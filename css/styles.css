@@ -1061,7 +1061,7 @@ h1, h2, h3, h4 {
     position: relative;
     width: fit-content;
     font-size: 32px;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 1.12;
     text-transform: uppercase;
     letter-spacing: 0.04em;
@@ -1075,7 +1075,7 @@ h1, h2, h3, h4 {
     content: "";
     position: absolute;
     left: 0;
-    width: 40%;
+    width: 25%;
     height: 3px;
     background: var(--red);
 }
