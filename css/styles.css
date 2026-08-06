@@ -1684,6 +1684,7 @@ h1, h2, h3, h4 {
         flex-wrap: wrap;
         gap: 28px 16px;
         width: auto;
+        justify-content: center;
     }
 
     .flow-arrow {
@@ -1792,10 +1793,18 @@ h1, h2, h3, h4 {
         font-size: 32px;
     }
 
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
     /* Highlights */
     .highlights {
         grid-template-columns: repeat(2, 1fr);
         margin-top: -24px;
+    }
+
+    .highlight-item {
+        padding: 22px 20px;
     }
 
     .highlight-item:nth-child(n) {
@@ -1821,6 +1830,16 @@ h1, h2, h3, h4 {
 
     .flow-item p {
         font-size: 12.5px;
+    }
+
+    /* Learn */
+    .learn-card {
+        padding: 30px 24px;
+    }
+
+    /* Beyond */
+    .beyond-grid {
+        gap: 28px 12px;
     }
 
     /* Programs */
@@ -1853,12 +1872,20 @@ h1, h2, h3, h4 {
 
 /* ===== Mobile (480px) ===== */
 @media (max-width: 480px) {
+    html {
+        scroll-padding-top: 64px;
+    }
+
     .container {
         padding-inline: 16px;
     }
 
     .section {
-        padding-block: 56px;
+        padding-block: 52px;
+    }
+
+    .nav-bar {
+        padding-block: 12px;
     }
 
     .logo-text strong {
@@ -1875,16 +1902,33 @@ h1, h2, h3, h4 {
         font-size: 17px;
     }
 
+    /* Hero */
+    .hero {
+        padding-top: 36px;
+        padding-bottom: 96px;
+    }
+
+    .hero-inner {
+        gap: 32px;
+    }
+
     .hero-title {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .hero-text {
         font-size: 15px;
+        margin-bottom: 26px;
+    }
+
+    .hero-actions {
+        gap: 12px;
+        margin-bottom: 30px;
     }
 
     .hero-actions .btn {
         width: 100%;
+        padding: 15px 24px;
     }
 
     .social-proof {
@@ -1893,6 +1937,12 @@ h1, h2, h3, h4 {
         gap: 12px;
     }
 
+    .avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Highlights */
     .highlights {
         grid-template-columns: 1fr;
     }
@@ -1906,26 +1956,76 @@ h1, h2, h3, h4 {
         border-bottom: none;
     }
 
+    .highlight-item {
+        padding: 20px 18px;
+    }
+
+    /* Learn */
     .learn-grid {
         grid-template-columns: 1fr;
     }
 
+    .learn-card {
+        padding: 28px 22px;
+    }
+
+    .learn-title {
+        font-size: 19px;
+    }
+
     .section-title {
-        font-size: 27px;
+        font-size: 26px;
+        letter-spacing: 0.03em;
+    }
+
+    .section-heading {
+        margin-bottom: 32px;
     }
 
     .heading-flourish {
-        gap: 14px;
+        gap: 12px;
     }
 
     .flourish .line {
-        width: 26px;
+        width: 24px;
     }
 
+    /* Beyond */
+    .beyond-grid {
+        gap: 24px 10px;
+    }
+
+    .beyond-icon {
+        width: 62px;
+        height: 62px;
+        font-size: 23px;
+    }
+
+    /* Programs */
     .programs-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
+    .program-body {
+        padding: 22px 16px 22px 18px;
+    }
+
+    .program-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .program-text {
+        font-size: 13px;
+    }
+
+    .program-photo {
+        flex: 0 0 42%;
+        width: 42%;
+    }
+
+    /* Why panel */
     .why-panel {
         grid-template-columns: 1fr;
         padding: 24px 16px;
@@ -1936,7 +2036,8 @@ h1, h2, h3, h4 {
     }
 
     .why-title {
-        font-size: 27px;
+        font-size: 26px;
+        margin-inline: 0;
     }
 
     .why-title::before,
@@ -1945,27 +2046,183 @@ h1, h2, h3, h4 {
         transform: none;
     }
 
+    .metric {
+        padding: 22px 14px;
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+        padding: 28px 22px;
+    }
+
+    /* Admissions */
     .step {
         flex: 0 0 100%;
     }
 
+    .step p {
+        padding-inline: 8px;
+    }
+
+    /* Contact banner */
+    .contact-banner {
+        padding-block: 28px;
+    }
+
     .contact-info h2 {
-        font-size: 20px;
+        font-size: 19px;
+        letter-spacing: 0.02em;
     }
 
     .contact-list li {
-        font-size: 14.5px;
+        font-size: 14px;
         text-align: left;
     }
 
     .btn-whatsapp {
-        padding: 14px 20px;
-        font-size: 13.5px;
+        padding: 13px 20px;
+        font-size: 13px;
+    }
+
+    /* Footer */
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .footer-nav ul {
+        gap: 12px 24px;
     }
 
     .footer-grid {
         gap: 36px;
-        padding-block: 52px 40px;
+        padding-block: 48px 36px;
+    }
+
+    .footer-bottom {
+        padding-block: 16px;
+    }
+}
+
+/* ===== Mobile small (360px) ===== */
+@media (max-width: 360px) {
+    .container {
+        padding-inline: 14px;
+    }
+
+    .logo-text strong {
+        font-size: 12px;
+    }
+
+    .logo-text small {
+        font-size: 8px;
+    }
+
+    .logo-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+    .hero-title {
+        font-size: 27px;
+    }
+
+    .hero-text {
+        font-size: 14.5px;
+    }
+
+    .social-proof p {
+        font-size: 13px;
+    }
+
+    .section-title {
+        font-size: 23px;
+    }
+
+    .learn-title {
+        font-size: 18px;
+    }
+
+    .learn-icon {
+        width: 58px;
+        height: 58px;
+        font-size: 23px;
+    }
+
+    .flow-photo {
+        width: 92px;
+        height: 92px;
+        font-size: 26px;
+    }
+
+    .flow-item p {
+        font-size: 12px;
+    }
+
+    .beyond-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 21px;
+    }
+
+    .beyond-grid p {
+        font-size: 12px;
+    }
+
+    .program-photo {
+        flex: 0 0 40%;
+        width: 40%;
+    }
+
+    .age-badge {
+        font-size: 11px;
+        padding: 5px 12px;
+    }
+
+    .why-title {
+        font-size: 24px;
+    }
+
+    .metric-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .metric strong {
+        font-size: 16px;
+    }
+
+    .metric small {
+        font-size: 12.5px;
+    }
+
+    .step-num {
+        width: 56px;
+        height: 56px;
+        font-size: 21px;
+    }
+
+    .step h3 {
+        font-size: 16px;
+    }
+
+    .step p {
+        font-size: 13px;
+    }
+
+    .contact-info h2 {
+        font-size: 17px;
+    }
+
+    .testimonial-card > p {
+        font-size: 14px;
+    }
+
+    .testimonial-card cite strong {
+        font-size: 14px;
     }
 }
 
