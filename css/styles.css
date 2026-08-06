@@ -820,9 +820,10 @@ h1, h2, h3, h4 {
 
 .montessori-flow {
     position: relative;
+    width: max-content;
+    margin-inline: auto;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
     gap: 22px;
 }
 
@@ -830,10 +831,10 @@ h1, h2, h3, h4 {
     content: "";
     position: absolute;
     top: 60px;
-    left: 0;
-    right: 0;
+    left: 60px;
+    right: 60px;
     height: 2px;
-    background: #C6D1E0;
+    background: #B9C4D4;
     z-index: 0;
 }
 
@@ -889,10 +890,8 @@ h1, h2, h3, h4 {
 .flow-arrow {
     align-self: flex-start;
     margin-top: 51px;
-    font-size: 18px;
-    line-height: 1;
-    color: #B9C4D4;
     flex-shrink: 0;
+    line-height: 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -1651,6 +1650,7 @@ h1, h2, h3, h4 {
     .montessori-flow {
         flex-wrap: wrap;
         gap: 28px 16px;
+        width: auto;
     }
 
     .flow-arrow {
