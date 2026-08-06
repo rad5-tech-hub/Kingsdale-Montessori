@@ -1387,6 +1387,7 @@ h1, h2, h3, h4 {
 }
 
 .students-photo {
+    position: relative;
     width: min(240px, 100%);
     aspect-ratio: 4 / 3.2;
     border-radius: 46% 54% 50% 50% / 55% 45% 55% 45%;
@@ -1399,6 +1400,15 @@ h1, h2, h3, h4 {
     background-position: center;
     border: 6px solid rgba(255, 255, 255, 0.14);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.students-photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: rgba(4, 18, 44, 0.18);
+    z-index: 1;
 }
 
 .btn-whatsapp {
