@@ -1441,6 +1441,9 @@ h1, h2, h3, h4 {
 
 .logo--footer .logo-text strong {
     color: var(--white);
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.25;
 }
 
 .logo--footer .logo-text small {
@@ -1466,7 +1469,8 @@ h1, h2, h3, h4 {
 
 .footer-nav ul {
     display: grid;
-    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 28px;
 }
 
 .footer-nav a {
