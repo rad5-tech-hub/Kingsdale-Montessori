@@ -9,7 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Baloo+2:wght@400;500;600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -57,46 +57,96 @@
         <section class="hero" id="home">
             <div class="container hero-inner">
 
-                <div class="hero-content">
-                    <h1 class="hero-title">
-                        <span class="line-navy">Raising</span>
-                        <span class="line-red">Godly Leaders</span>
-                        <span class="line-navy">For Tomorrow</span>
+                <div class="hero-card" role="img" aria-label="Kingsdale Montessori School welcome banner">
+
+                    <!-- Right photo panel -->
+                    <div class="kds-photo" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1400&q=80" alt="">
+                    </div>
+
+                    <!-- Top-left signboard photo inset -->
+                    <figure class="kds-sign">
+                        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=460&q=80" alt="Kingsdale Montessori School outdoor signboard">
+                    </figure>
+
+                    <!-- Logo lockup -->
+                    <div class="kds-brand">
+                        <svg class="kds-crest" viewBox="0 0 100 116" role="img" aria-label="Kingsdale crest">
+                            <path d="M22 32 L31 15 L43 25 L50 8 L57 25 L69 15 L78 32 L71 40 L29 40 Z" fill="#1F7A45" stroke="#0E2A6E" stroke-width="2.6" stroke-linejoin="round"/>
+                            <path d="M50 42 C63 42 71 49 71 60 C71 76 60 87 50 93 C40 87 29 76 29 60 C29 49 37 42 50 42 Z" fill="#FFFFFF" stroke="#0E2A6E" stroke-width="4.2"/>
+                            <circle cx="50" cy="59" r="17" fill="#D62828"/>
+                            <text x="41" y="65" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">K</text>
+                            <rect x="47.5" y="58" width="5" height="4" fill="#fff"/>
+                            <text x="59" y="65" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">B</text>
+                            <path d="M10 100 C 27 88 73 88 90 100 L 84 110 C 70 103 30 103 16 110 Z" fill="#E6B33E" stroke="#B8860B" stroke-width="1.6" stroke-linejoin="round"/>
+                            <path d="M10 100 L15 106 L18 98 Z" fill="#E6B33E"/>
+                            <path d="M90 100 L85 106 L82 98 Z" fill="#E6B33E"/>
+                        </svg>
+                        <div class="kds-wordmark">
+                            <span class="wm-name">Kingsdale</span>
+                            <span class="wm-sub">Montessori School</span>
+                            <span class="wm-tag">Raising Godly Leaders</span>
+                        </div>
+                    </div>
+
+                    <!-- Headline -->
+                    <h1 class="kds-h1">
+                        <span class="ln ln--navy">Raising</span>
+                        <span class="ln ln--red">Godly Leaders</span>
+                        <span class="ln ln--navy">For Tomorrow</span>
                     </h1>
 
-                    <p class="hero-text">
-                        A Christ-centered Montessori school nurturing children academically, spiritually, socially
-                        and emotionally to become confident, responsible and purpose-driven leaders who transform society.
+                    <!-- Body copy -->
+                    <p class="kds-para">
+                        At Kingsdale Montessori School, we nurture every child academically, spiritually, socially
+                        and emotionally in a loving, safe and inspiring environment based on Christian values and
+                        the Montessori standard of education.
                     </p>
 
-                    <div class="hero-actions">
-                        <a href="#admissions" class="btn btn-navy">
-                            <i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Book a School Tour
+                    <!-- Tagline -->
+                    <p class="kds-tagline">
+                        <span>Nurture</span><i>&#9679;</i><span>Inspire</span><i>&#9679;</i><span>Equip</span><i>&#9679;</i><span>Lead</span>
+                    </p>
+
+                    <!-- CTA buttons -->
+                    <div class="kds-cta">
+                        <a class="btn btn--navy" href="#admissions">
+                            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                            Book a School Tour
                         </a>
-                        <a href="#contact" class="btn btn-outline-red">Enquire Now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                        <a class="btn btn--red" href="#contact">
+                            Enquire Now
+                            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 20h9"/>
+                                <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                            </svg>
+                        </a>
                     </div>
 
-                    <div class="social-proof">
-                        <div class="avatars">
-                            <span class="avatar av-1"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=150&q=80" alt="Parent of a Kingsdale student" loading="lazy"></span>
-                            <span class="avatar av-2"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Parent of a Kingsdale student" loading="lazy"></span>
-                            <span class="avatar av-3"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Parent of a Kingsdale student" loading="lazy"></span>
-                            <span class="avatar av-4"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Parent of a Kingsdale student" loading="lazy"></span>
+                    <!-- Top-right accreditation badge -->
+                    <div class="kds-badges">
+                        <div class="badge-row">
+                            <svg class="badge-ico" viewBox="0 0 24 24" fill="#E6B33E">
+                                <path d="M4 16l-1.5-7L8 11 12 4l4 7 5.5-2L20 16H4z"/>
+                                <path d="M4 18h16v2H4z"/>
+                            </svg>
+                            <span>Government Approved</span>
                         </div>
-                        <p>Trusted by Parents. Loved by Children.</p>
+                        <div class="badge-sep"></div>
+                        <div class="badge-row">
+                            <svg class="badge-ico" viewBox="0 0 24 24" fill="none" stroke="#E6B33E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/>
+                                <path d="M9 12l2 2 4-4"/>
+                            </svg>
+                            <span>Association of Christian Schools International (ACSI)</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="hero-visual">
-                    <div class="hero-photo" role="img" aria-label="A child sitting at a table with Montessori learning materials"></div>
-                    <svg class="hero-waves" viewBox="0 0 520 620" fill="none" aria-hidden="true">
-                        <path class="wave-red" d="M12 150 C 120 60, 300 60, 508 140" stroke="#E31B23" stroke-width="7" stroke-linecap="round"/>
-                        <path class="wave-blue" d="M14 180 C 130 90, 310 90, 506 172" stroke="#0052CC" stroke-width="5" stroke-linecap="round"/>
-                        <path class="wave-red" d="M60 560 C 190 640, 380 640, 500 560" stroke="#E31B23" stroke-width="6" stroke-linecap="round"/>
-                        <circle cx="70" cy="70" r="8" fill="#0052CC"/>
-                        <circle cx="452" cy="72" r="5" fill="#E31B23"/>
-                        <circle cx="486" cy="420" r="7" fill="#0052CC"/>
-                    </svg>
                 </div>
 
             </div>
@@ -153,30 +203,91 @@
         </section>
 
         <!-- ============================================================
-             D. ABOUT US
+             D. ABOUT US / OUR HISTORY
              ============================================================ -->
-        <section class="section about" id="about">
-            <div class="container about-grid">
-                <div class="about-media">
-                    <div class="about-photo" role="img" aria-label="Four children sitting on the floor reading books"></div>
+        <section class="section kds-about" id="about">
+            <div class="container kds-about-grid">
+
+                <div class="abt-col abt-col--left">
+                    <p class="abt-eyebrow">About Us</p>
+                    <h2 class="abt-title">A Legacy of Faith,<br>Excellence &amp; Purpose</h2>
+                    <div class="abt-body">
+                        <p>Kingsdale Montessori School was established in 2008 with a burden to raise a generation of
+                            children who know God, love learning and live with purpose.</p>
+                        <p>We are a Christian-based Montessori school committed to providing a child-centered education
+                            that develops the whole child &ndash; intellectually, spiritually, socially, emotionally and
+                            physically.</p>
+                        <p>Using the Montessori standard, we train the 5 senses through practical life activities and
+                            sensorial materials that build concentration, independence and a deep love for learning.</p>
+                        <p>Over the years, we have built a reputation for excellence, discipline, integrity and
+                            leadership, partnering with parents to raise children who influence their generation and
+                            transform society.</p>
+                    </div>
                 </div>
-                <div class="about-content">
-                    <p class="subtitle">About Us</p>
-                    <h2 class="section-title">A School With Purpose</h2>
-                    <p>
-                        Kingsdale Montessori School is a Christian-based school committed to raising godly leaders
-                        who will make a positive impact in their world.
-                    </p>
-                    <p>
-                        Using the Montessori approach, we provide a learning experience that builds curiosity,
-                        independence, discipline, and a love for lifelong learning.
-                    </p>
-                    <p>
-                        We partner with parents to guide each child academically, socially and spiritually toward
-                        a bright future.
-                    </p>
-                    <a href="#academics" class="btn btn-navy">Learn More About Us <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+
+                <div class="abt-col abt-col--center">
+                    <figure class="abt-photo abt-photo--top">
+                        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=900&q=80"
+                            alt="A teacher working with young students at a low table">
+                    </figure>
+                    <div class="abt-photo-row">
+                        <figure class="abt-photo abt-photo--small abt-photo--small-a">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=520&q=80"
+                                alt="Three girls reading a picture book together">
+                        </figure>
+                        <figure class="abt-photo abt-photo--small abt-photo--small-b">
+                            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=520&q=80"
+                                alt="A boy playing with a stacking pyramid toy">
+                        </figure>
+                    </div>
                 </div>
+
+                <div class="abt-col abt-col--right">
+                    <p class="abt-eyebrow">Our History</p>
+                    <ul class="abt-timeline">
+                        <li class="t-item">
+                            <span class="t-dot" aria-hidden="true"></span>
+                            <div class="t-content">
+                                <h3 class="t-year">2008</h3>
+                                <p class="t-desc">Kingsdale Montessori School was founded with a vision to raise godly
+                                    leaders through quality Montessori education.</p>
+                            </div>
+                        </li>
+                        <li class="t-item">
+                            <span class="t-dot" aria-hidden="true"></span>
+                            <div class="t-content">
+                                <h3 class="t-year">2012</h3>
+                                <p class="t-desc">Became fully established as a Christian-based Montessori Institution
+                                    with excellent facilities and qualified teachers.</p>
+                            </div>
+                        </li>
+                        <li class="t-item">
+                            <span class="t-dot" aria-hidden="true"></span>
+                            <div class="t-content">
+                                <h3 class="t-year">2016</h3>
+                                <p class="t-desc">Joined Association of Christian Schools International (ACSI) and
+                                    raised the standard of academic and moral excellence.</p>
+                            </div>
+                        </li>
+                        <li class="t-item">
+                            <span class="t-dot" aria-hidden="true"></span>
+                            <div class="t-content">
+                                <h3 class="t-year">2020</h3>
+                                <p class="t-desc">Expanded our learning environment, introduced innovative learning
+                                    tools and strengthened parent partnership.</p>
+                            </div>
+                        </li>
+                        <li class="t-item">
+                            <span class="t-dot" aria-hidden="true"></span>
+                            <div class="t-content">
+                                <h3 class="t-year">Today</h3>
+                                <p class="t-desc">We continue to nurture confident, creative and compassionate leaders
+                                    who are impacting the world for Christ.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </section>
 
@@ -256,314 +367,615 @@
         </section>
 
         <!-- ============================================================
-             F. THE MONTESSORI EXPERIENCE
+             F+G+H. MONTESSORI EXPERIENCE / BEYOND THE CLASSROOM / OUR PROGRAMS
              ============================================================ -->
-        <section class="section montessori">
+        <section class="section kds-programs" id="programs">
             <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">Our Approach</p>
-                    <h2 class="section-title">The Montessori Experience</h2>
+
+                <!-- ROW 1 — MONTESSORI EXPERIENCE | BEYOND THE CLASSROOM -->
+                <div class="row1">
+
+                    <!-- LEFT: THE MONTESSORI EXPERIENCE -->
+                    <div class="col col--montessori">
+                        <div class="rule-head">
+                            <span class="rule rule--left" aria-hidden="true">
+                                <span class="rule-dot"></span>
+                                <span class="rule-line"></span>
+                            </span>
+                            <h2>The Montessori Experience</h2>
+                            <span class="rule" aria-hidden="true">
+                                <span class="rule-line"></span>
+                                <span class="rule-dot"></span>
+                            </span>
+                        </div>
+
+                        <div class="circle-row">
+                            <div class="circle-item">
+                                <div class="circle">
+                                    <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=300&h=300&q=80"
+                                        alt="Child engaged in hands-on learning">
+                                </div>
+                                <p class="circle-label">Hands-on Learning</p>
+                            </div>
+                            <div class="circle-item">
+                                <div class="circle">
+                                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=300&h=300&q=80"
+                                        alt="Child discovering at own pace">
+                                </div>
+                                <p class="circle-label">Self-paced Discovery</p>
+                            </div>
+                            <div class="circle-item">
+                                <div class="circle">
+                                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=300&h=300&q=80"
+                                        alt="Child doing practical life activities">
+                                </div>
+                                <p class="circle-label">Practical Life Activities</p>
+                            </div>
+                            <div class="circle-item">
+                                <div class="circle">
+                                    <img src="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?auto=format&fit=crop&w=300&h=300&q=80"
+                                        alt="Child exploring sensorial materials">
+                                </div>
+                                <p class="circle-label">Sensorial Development</p>
+                            </div>
+                            <div class="circle-item">
+                                <div class="circle">
+                                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=300&h=300&q=80"
+                                        alt="Child building independence">
+                                </div>
+                                <p class="circle-label">Independence &amp; Confidence</p>
+                            </div>
+                            <div class="circle-item">
+                                <div class="circle">
+                                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=300&h=300&q=80"
+                                        alt="Child curious about learning">
+                                </div>
+                                <p class="circle-label">Curiosity &amp; Love for Learning</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: BEYOND THE CLASSROOM -->
+                    <div class="col col--beyond" id="beyond">
+                        <div class="rule-head">
+                            <span class="rule rule--left" aria-hidden="true">
+                                <span class="rule-dot"></span>
+                                <span class="rule-line"></span>
+                            </span>
+                            <h2>Beyond the Classroom</h2>
+                            <span class="rule" aria-hidden="true">
+                                <span class="rule-line"></span>
+                                <span class="rule-dot"></span>
+                            </span>
+                        </div>
+
+                        <div class="icon-row">
+                            <div class="icon-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M9 18V5l12-2v13" />
+                                    <circle cx="6" cy="18" r="3" />
+                                    <circle cx="18" cy="16" r="3" />
+                                </svg>
+                                <p class="icon-label">Music</p>
+                            </div>
+                            <div class="icon-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path
+                                        d="M12 3a9 9 0 1 0 0 18c1.6 0 2.1-1 1.6-1.9-.4-.7-.2-1.3.5-1.3 1.4 0 2.4-.9 2.4-2.4 0-1.5-1-1.9-1-3.2 0-2.3 1.6-2.8 1.3-5-.4-2.4-2.4-4.2-4.8-4.2z" />
+                                    <circle cx="7.8" cy="9.5" r=".7" />
+                                    <circle cx="10.5" cy="7.2" r=".7" />
+                                    <circle cx="14.5" cy="8.2" r=".7" />
+                                </svg>
+                                <p class="icon-label">Art &amp; Craft</p>
+                            </div>
+                            <div class="icon-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="4.2" r="2" />
+                                    <path d="M12 6.2v5" />
+                                    <path d="M9 8l-4 1.5 1.5 1.6L9.6 9.6" />
+                                    <path d="M15 8l4 1.5-1.5 1.6L14.4 9.6" />
+                                    <path d="M12 11.2l-2.6 7h5.2z" />
+                                    <path d="M9.4 18.2h5.2" />
+                                </svg>
+                                <p class="icon-label">Dance</p>
+                            </div>
+                            <div class="icon-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9" />
+                                    <path d="M12 7.2l2.7 2-1 3.3h-3.4l-1-3.3z" />
+                                    <path d="M12 12.5l-2.4 1.8" />
+                                    <path d="M12 12.5l2.4 1.8" />
+                                    <path d="M5.5 9.5L8 9.8" />
+                                    <path d="M16 9.8l2.5-.3" />
+                                </svg>
+                                <p class="icon-label">Sports</p>
+                            </div>
+                            <div class="icon-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M4 12v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5" />
+                                    <path d="M3 12l1.5-5h15l1.5 5z" />
+                                    <path d="M7 17v2" />
+                                    <path d="M17 17v2" />
+                                    <path d="M5 12v3" />
+                                    <path d="M19 12v3" />
+                                </svg>
+                                <p class="icon-label">Excursions</p>
+                            </div>
+                            <div class="icon-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M12 6.5l2.4 1.2-.5 2.6H10.1l-.5-2.6z" />
+                                    <path d="M4 12.5v5.5h4V11.7z" />
+                                    <path d="M20 12.5v5.5h-4V11.7z" />
+                                    <path d="M4 12.5c1.2-1.8 2.2-2.6 4-3.4" />
+                                    <path d="M20 12.5c-1.2-1.8-2.2-2.6-4-3.4" />
+                                    <path d="M8 12.5V9.1" />
+                                    <path d="M16 12.5V9.1" />
+                                    <path d="M8 9.1h8" />
+                                </svg>
+                                <p class="icon-label">Bible Club</p>
+                            </div>
+                            <div class="icon-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>
+                                <p class="icon-label">Coding Club</p>
+                            </div>
+                            <div class="icon-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M12 3l2.5 2.2h2.3l.5 2.6 2.2 1.6-1 2.6 1 2.6-2.2 1.6-.5 2.6h-2.3L12 21l-2.5-2.2H7.2l-.5-2.6-2.2-1.6 1-2.6-1-2.6 2.2-1.6.5-2.6h2.3z" />
+                                    <path d="M10 9.5l3 2.5-3 2.5" />
+                                    <path d="M14 8l-2.5 8" />
+                                </svg>
+                                <p class="icon-label">Cultural Days</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="montessori-flow">
-                    <div class="flow-item">
-                        <div class="flow-photo fp-1"><img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=300&q=80" alt="Hands-on learning" loading="lazy"></div>
-                        <p>Hands-on Learning</p>
-                    </div>
-                    <span class="flow-arrow" aria-hidden="true"><svg viewBox="0 0 8 18" width="8" height="18" focusable="false"><path d="M1 1 L7 9 L1 17" fill="none" stroke="#B9C4D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                    <div class="flow-item">
-                        <div class="flow-photo fp-2"><img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=300&q=80" alt="Self-paced discovery" loading="lazy"></div>
-                        <p>Self-paced Discovery</p>
-                    </div>
-                    <span class="flow-arrow" aria-hidden="true"><svg viewBox="0 0 8 18" width="8" height="18" focusable="false"><path d="M1 1 L7 9 L1 17" fill="none" stroke="#B9C4D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                    <div class="flow-item">
-                        <div class="flow-photo fp-3"><img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=300&q=80" alt="Practical life activities" loading="lazy"></div>
-                        <p>Practical Life Activities</p>
-                    </div>
-                    <span class="flow-arrow" aria-hidden="true"><svg viewBox="0 0 8 18" width="8" height="18" focusable="false"><path d="M1 1 L7 9 L1 17" fill="none" stroke="#B9C4D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                    <div class="flow-item">
-                        <div class="flow-photo fp-4"><img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=300&q=80" alt="Sensory development" loading="lazy"></div>
-                        <p>Sensory Development</p>
-                    </div>
-                    <span class="flow-arrow" aria-hidden="true"><svg viewBox="0 0 8 18" width="8" height="18" focusable="false"><path d="M1 1 L7 9 L1 17" fill="none" stroke="#B9C4D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                    <div class="flow-item">
-                        <div class="flow-photo fp-5"><img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=300&q=80" alt="Independence and confidence" loading="lazy"></div>
-                        <p>Independence &amp; Confidence</p>
-                    </div>
-                    <span class="flow-arrow" aria-hidden="true"><svg viewBox="0 0 8 18" width="8" height="18" focusable="false"><path d="M1 1 L7 9 L1 17" fill="none" stroke="#B9C4D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                    <div class="flow-item">
-                        <div class="flow-photo fp-6"><img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=300&q=80" alt="Curiosity and love for learning" loading="lazy"></div>
-                        <p>Curiosity &amp; Love for Learning</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================
-             G. BEYOND THE CLASSROOM
-             ============================================================ -->
-        <section class="section beyond" id="beyond">
-            <div class="container">
-                <div class="section-heading heading-flourish">
-                    <span class="flourish" aria-hidden="true"><i class="line"></i><i class="diamond"></i><i class="line"></i></span>
-                    <h2 class="section-title">Beyond The Classroom</h2>
-                    <span class="flourish" aria-hidden="true"><i class="line"></i><i class="diamond"></i><i class="line"></i></span>
+                <!-- DIVIDER — OUR PROGRAMS -->
+                <div class="divider" role="presentation">
+                    <span class="rule rule--left" aria-hidden="true">
+                        <span class="rule-dot"></span>
+                        <span class="rule-line"></span>
+                    </span>
+                    <h2>Our Programs</h2>
+                    <span class="rule" aria-hidden="true">
+                        <span class="rule-line"></span>
+                        <span class="rule-dot"></span>
+                    </span>
                 </div>
 
-                <ul class="beyond-grid">
-                    <li><span class="beyond-icon"><i class="fa-solid fa-music" aria-hidden="true"></i></span><p>Music</p></li>
-                    <li><span class="beyond-icon"><i class="fa-solid fa-brush" aria-hidden="true"></i></span><p>Art &amp; Craft</p></li>
-                    <li><span class="beyond-icon"><i class="fa-solid fa-person-running" aria-hidden="true"></i></span><p>Dance</p></li>
-                    <li><span class="beyond-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></span><p>Coding &amp; ICT</p></li>
-                    <li><span class="beyond-icon"><i class="fa-solid fa-futbol" aria-hidden="true"></i></span><p>Sports</p></li>
-                    <li><span class="beyond-icon"><i class="fa-solid fa-chess" aria-hidden="true"></i></span><p>Chess</p></li>
-                    <li><span class="beyond-icon"><i class="fa-solid fa-bus" aria-hidden="true"></i></span><p>Excursions</p></li>
-                    <li><span class="beyond-icon"><i class="fa-solid fa-book-bible" aria-hidden="true"></i></span><p>Bible Club</p></li>
-                    <li><span class="beyond-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></span><p>Debate &amp; Public Speaking</p></li>
-                    <li><span class="beyond-icon"><i class="fa-solid fa-earth-africa" aria-hidden="true"></i></span><p>Cultural &amp; Fun Days</p></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- ============================================================
-             H. OUR PROGRAMS
-             ============================================================ -->
-        <section class="section programs" id="programs">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">Enrolment</p>
-                    <h2 class="section-title">Our Programs</h2>
-                </div>
-
+                <!-- PROGRAM CARDS GRID -->
                 <div class="programs-grid">
-                    <article class="program-card">
-                        <div class="program-body">
-                            <h3 class="program-title program-title--blue">Créche</h3>
-                            <span class="age-badge age-badge--blue">Ages 1 - 2</span>
-                            <p class="program-text">
-                                A nurturing start that builds curiosity, confidence and early development.
-                            </p>
+
+                    <article class="card card--accent">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=400&h=440&q=80"
+                                alt="Baby exploring an open board book on a wooden table">
                         </div>
-                        <div class="program-photo pp-1" role="img" aria-label="Créche student"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Foundation 1</h3>
+                            <p class="card-age">12 months &ndash; 2 years</p>
+                            <p class="card-desc">A loving start that builds trust, sensory awareness and early development.</p>
+                        </div>
                     </article>
 
-                    <article class="program-card">
-                        <div class="program-body">
-                            <h3 class="program-title program-title--red">Nursery</h3>
-                            <span class="age-badge age-badge--red">Ages 2 - 3</span>
-                            <p class="program-text">
-                                Building language, social skills and independence through play.
-                            </p>
+                    <article class="card">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=400&h=440&q=80"
+                                alt="Toddler playing with wooden educational toys">
                         </div>
-                        <div class="program-photo pp-2" role="img" aria-label="Nursery student"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Foundation 2</h3>
+                            <p class="card-age">2 years &ndash; 3 years</p>
+                            <p class="card-desc">Building independence through structured play, exploration and discovery.</p>
+                        </div>
                     </article>
 
-                    <article class="program-card">
-                        <div class="program-body">
-                            <h3 class="program-title program-title--blue">Kindergarten</h3>
-                            <span class="age-badge age-badge--blue">Ages 3 - 5</span>
-                            <p class="program-text">
-                                Preparing children for formal learning with the Montessori approach.
-                            </p>
+                    <article class="card">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?auto=format&fit=crop&w=400&h=440&q=80"
+                                alt="Young child stacking a colorful ring-stacker toy">
                         </div>
-                        <div class="program-photo pp-3" role="img" aria-label="Kindergarten student"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Preschool 1</h3>
+                            <p class="card-age">3 years &ndash; 4 years</p>
+                            <p class="card-desc">Developing curiosity, language, motor skills and social interaction.</p>
+                        </div>
                     </article>
 
-                    <article class="program-card">
-                        <div class="program-body">
-                            <h3 class="program-title program-title--red">Lower Primary</h3>
-                            <span class="age-badge age-badge--red">Ages 5 - 9</span>
-                            <p class="program-text">
-                                Strong academics, creativity and character building.
-                            </p>
+                    <article class="card">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=400&h=440&q=80"
+                                alt="Girl smiling while writing in a notebook">
                         </div>
-                        <div class="program-photo pp-4" role="img" aria-label="Lower primary student"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Preschool 2</h3>
+                            <p class="card-age">4 years &ndash; 5 years</p>
+                            <p class="card-desc">Preparing for formal learning with focus on confidence, readiness and creativity.</p>
+                        </div>
                     </article>
 
-                    <article class="program-card">
-                        <div class="program-body">
-                            <h3 class="program-title program-title--blue">Upper Primary</h3>
-                            <span class="age-badge age-badge--blue">Ages 10 - 11</span>
-                            <p class="program-text">
-                                Equipping learners with leadership skills and critical thinking.
-                            </p>
+                    <article class="card">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=400&h=440&q=80"
+                                alt="Boy in uniform writing at a desk">
                         </div>
-                        <div class="program-photo pp-5" role="img" aria-label="Upper primary student"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Grade K</h3>
+                            <p class="card-age">5 years &ndash; 6 years</p>
+                            <p class="card-desc">Kindergarten experience that builds strong foundations for academic success.</p>
+                        </div>
                     </article>
+
+                    <article class="card">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=400&h=440&q=80"
+                                alt="Boy smiling while writing at a desk with colored pencils">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Grade 1</h3>
+                            <p class="card-age">6 years &ndash; 7 years</p>
+                            <p class="card-desc">Building reading, writing, numeracy and character excellence.</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1518889751568-66e79845174d?auto=format&fit=crop&w=400&h=440&q=80"
+                                alt="Girl playing with a wooden abacus counting frame">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Grade 2</h3>
+                            <p class="card-age">7 years &ndash; 8 years</p>
+                            <p class="card-desc">Strengthening academic skills, critical thinking and problem solving.</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1495121553079-4c61bece8e6b?auto=format&fit=crop&w=400&h=440&q=80"
+                                alt="Girl looking at a small world globe">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Grade 3</h3>
+                            <p class="card-age">8 years &ndash; 9 years</p>
+                            <p class="card-desc">Developing creativity, independence and strong moral values.</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=400&h=440&q=80"
+                                alt="Boy writing in an exercise book, smiling">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Grade 4</h3>
+                            <p class="card-age">9 years &ndash; 10 years</p>
+                            <p class="card-desc">Preparing leaders with academic excellence and life skills.</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=400&h=440&q=80"
+                                alt="Boy smiling directly at camera with a pencil in hand">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Grade 5</h3>
+                            <p class="card-age">10 years &ndash; 11 years</p>
+                            <p class="card-desc">Equipping future leaders to excel academically and spiritually.</p>
+                        </div>
+                    </article>
+
                 </div>
+
             </div>
         </section>
 
         <!-- ============================================================
-             I. WHY CHOOSE KINGSDALE?
+             I+J+K. WHY CHOOSE KINGSDALE / STATS / TESTIMONIALS / ADMISSIONS
              ============================================================ -->
-        <section class="section why" id="why-choose-us">
+        <section class="section wc-section" id="why-choose-us">
             <div class="container">
-                <div class="why-panel">
-                    <div class="why-intro">
-                        <h2 class="why-title">Why Choose<br>Kingsdale?</h2>
-                        <p>
-                            We raise more than excellent students. We raise godly leaders who transform society.
-                        </p>
-                    </div>
 
-                    <div class="metric">
-                        <span class="metric-icon icon-blue"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i></span>
-                        <strong>10+</strong>
-                        <small>Years of Quality Education</small>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-icon icon-red"><i class="fa-solid fa-face-smile" aria-hidden="true"></i></span>
-                        <strong>500+</strong>
-                        <small>Happy Students and Growing</small>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-icon icon-navy"><i class="fa-solid fa-user-graduate" aria-hidden="true"></i></span>
-                        <strong>Qualified &amp; Passionate</strong>
-                        <small>Teachers</small>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-icon icon-cyan"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i></span>
-                        <strong>100%</strong>
-                        <small>Safe &amp; Secure Environment</small>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-icon icon-red"><i class="fa-solid fa-heart" aria-hidden="true"></i></span>
-                        <strong>Caring &amp; Supportive</strong>
-                        <small>School Community</small>
+                <!-- TOP ROW — THREE-PANEL TINTED BAND -->
+                <div class="wc-band">
+
+                    <!-- CARD 1: WHY CHOOSE KINGSDALE? -->
+                    <article class="wc-panel wc-panel--why">
+                        <h2 class="wc-panel-title">Why Choose Kingsdale?</h2>
+                        <ul class="wc-checklist">
+                            <li>
+                                <svg class="wc-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9" />
+                                    <path d="M8.5 12.5l2.5 2.5 5-5" />
+                                </svg>
+                                <p>Montessori Standard of Education</p>
+                            </li>
+                            <li>
+                                <svg class="wc-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9" />
+                                    <path d="M8.5 12.5l2.5 2.5 5-5" />
+                                </svg>
+                                <p>Christian foundation and values</p>
+                            </li>
+                            <li>
+                                <svg class="wc-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9" />
+                                    <path d="M8.5 12.5l2.5 2.5 5-5" />
+                                </svg>
+                                <p>Highly trained and passionate teachers</p>
+                            </li>
+                            <li>
+                                <svg class="wc-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9" />
+                                    <path d="M8.5 12.5l2.5 2.5 5-5" />
+                                </svg>
+                                <p>Safe, clean and child-friendly environment</p>
+                            </li>
+                            <li>
+                                <svg class="wc-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9" />
+                                    <path d="M8.5 12.5l2.5 2.5 5-5" />
+                                </svg>
+                                <p>Holistic development of the whole child</p>
+                            </li>
+                            <li>
+                                <svg class="wc-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9" />
+                                    <path d="M8.5 12.5l2.5 2.5 5-5" />
+                                </svg>
+                                <p>Strong partnership with parents</p>
+                            </li>
+                        </ul>
+                        <div class="wc-stars" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26" />
+                            </svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26" />
+                            </svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26" />
+                            </svg>
+                        </div>
+                    </article>
+
+                    <!-- CARD 2: STATS ROW -->
+                    <article class="wc-panel wc-panel--stats">
+                        <div class="wc-stats-row">
+
+                            <div class="wc-stat-col">
+                                <svg class="wc-stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <circle cx="12" cy="12" r="5.4" />
+                                    <path d="M12 3.2v2.2" />
+                                    <path d="M12 18.6v2.2" />
+                                    <path d="M3.2 12h2.2" />
+                                    <path d="M18.6 12h2.2" />
+                                </svg>
+                                <span class="wc-stat-num">10+</span>
+                                <span class="wc-stat-cap">Years of Quality Education</span>
+                            </div>
+
+                            <div class="wc-stat-col">
+                                <svg class="wc-stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="8" r="4" />
+                                    <path d="M4 20c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5" />
+                                </svg>
+                                <span class="wc-stat-num wc-stat-num--red">500+</span>
+                                <span class="wc-stat-cap">Happy Students and Growing</span>
+                            </div>
+
+                            <div class="wc-stat-col">
+                                <svg class="wc-stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6z" />
+                                    <path d="M8.5 12l2.5 2.5 4.5-4.5" />
+                                </svg>
+                                <span class="wc-stat-num wc-stat-num--green">Qualified &amp;</span>
+                                <span class="wc-stat-cap">Passionate Teachers</span>
+                            </div>
+
+                            <div class="wc-stat-col">
+                                <svg class="wc-stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6z" />
+                                    <path d="M12 8l1.5 5-1.5 3-1.5-3z" />
+                                </svg>
+                                <span class="wc-stat-num wc-stat-num--purple">100%</span>
+                                <span class="wc-stat-cap">Safe &amp; Secure Environment</span>
+                            </div>
+
+                            <div class="wc-stat-col">
+                                <svg class="wc-stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M8 21h8" />
+                                    <path d="M9 21a1 1 0 0 1-1-1V8a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v12a1 1 0 0 1-1 1" />
+                                    <path d="M12 3v3" />
+                                    <path d="M4 6.5h5v3H4z" />
+                                    <path d="M15 6.5h5v3h-5z" />
+                                </svg>
+                                <span class="wc-stat-num wc-stat-num--navy-dark">Caring &amp;</span>
+                                <span class="wc-stat-cap">Supportive Community</span>
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <!-- CARD 3: WHAT PARENTS SAY -->
+                    <article class="wc-panel wc-panel--testi">
+                        <h2 class="wc-panel-title wc-panel-title--center">What Parents Say</h2>
+                        <div class="wc-testi-row">
+
+                            <div class="wc-mini-card">
+                                <span class="wc-quote-glyph" aria-hidden="true">&ldquo;</span>
+                                <blockquote>Kingsdale has been a blessing to our family. My child has grown in confidence,
+                                    discipline and in the fear of God.</blockquote>
+                                <div class="wc-testi-person">
+                                    <img class="wc-avatar"
+                                        src="https://i.pravatar.cc/80?img=32"
+                                        alt="Portrait of Mrs. Adoku M." loading="lazy">
+                                    <div>
+                                        <p class="wc-testi-name">Mrs. Adoku M.</p>
+                                        <p class="wc-testi-role">Parent</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wc-mini-card">
+                                <span class="wc-quote-glyph" aria-hidden="true">&ldquo;</span>
+                                <blockquote>The teachers are amazing! My son is learning so much and always happy to go to
+                                    school.</blockquote>
+                                <div class="wc-testi-person">
+                                    <img class="wc-avatar"
+                                        src="https://i.pravatar.cc/80?img=12"
+                                        alt="Portrait of Mr. Chinedu O." loading="lazy">
+                                    <div>
+                                        <p class="wc-testi-name">Mr. Chinedu O.</p>
+                                        <p class="wc-testi-role">Parent</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wc-mini-card">
+                                <span class="wc-quote-glyph" aria-hidden="true">&ldquo;</span>
+                                <blockquote>A safe, loving and excellent environment. My daughter is thriving academically and
+                                    spiritually.</blockquote>
+                                <div class="wc-testi-person">
+                                    <img class="wc-avatar"
+                                        src="https://i.pravatar.cc/80?img=45"
+                                        alt="Portrait of Mrs. Blessing A." loading="lazy">
+                                    <div>
+                                        <p class="wc-testi-name">Mrs. Blessing A.</p>
+                                        <p class="wc-testi-role">Parent</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- DIVIDER — ADMISSIONS PROCESS -->
+                <div class="wc-divider" role="presentation">
+                    <span class="rule rule--left" aria-hidden="true">
+                        <span class="rule-dot"></span>
+                        <span class="rule-line"></span>
+                    </span>
+                    <h2>Admissions Process</h2>
+                    <span class="rule" aria-hidden="true">
+                        <span class="rule-line"></span>
+                        <span class="rule-dot"></span>
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- ADMISSIONS PROCESS STEPS (full-width band) -->
+            <div class="wc-steps-section" id="admissions">
+                <div class="wc-steps-inner">
+                    <div class="wc-steps-row">
+
+                        <div class="wc-step-item">
+                            <span class="wc-step-badge">1</span>
+                            <svg class="wc-step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5c-1.5 0-2.9-.4-4.1-1l-4 1 1-3.9a8.5 8.5 0 1 1 15.6-4.6z" />
+                                <path d="M9 11h6" />
+                                <path d="M9 14h4" />
+                            </svg>
+                            <h3 class="wc-step-title">Make an Enquiry</h3>
+                            <p class="wc-step-caption">Contact us to learn more about our school.</p>
+                        </div>
+
+                        <span class="wc-step-arrow" aria-hidden="true">&#8594;</span>
+
+                        <div class="wc-step-item">
+                            <span class="wc-step-badge wc-step-badge--red">2</span>
+                            <svg class="wc-step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="5" width="18" height="16" rx="2" />
+                                <path d="M16 3v4" />
+                                <path d="M8 3v4" />
+                                <path d="M3 10h18" />
+                                <path d="M8 14h.01" />
+                                <path d="M12 14h.01" />
+                                <path d="M16 14h.01" />
+                            </svg>
+                            <h3 class="wc-step-title">Visit the School</h3>
+                            <p class="wc-step-caption">Schedule a tour and meet our teachers.</p>
+                        </div>
+
+                        <span class="wc-step-arrow" aria-hidden="true">&#8594;</span>
+
+                        <div class="wc-step-item">
+                            <span class="wc-step-badge">3</span>
+                            <svg class="wc-step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="5" y="3" width="14" height="18" rx="2" />
+                                <path d="M9 3v3h6V3" />
+                                <path d="M9 11l2 2 4-4" />
+                                <path d="M9 16h6" />
+                            </svg>
+                            <h3 class="wc-step-title">Assessment</h3>
+                            <p class="wc-step-caption">Child assessment and placement.</p>
+                        </div>
+
+                        <span class="wc-step-arrow" aria-hidden="true">&#8594;</span>
+
+                        <div class="wc-step-item">
+                            <span class="wc-step-badge wc-step-badge--red">4</span>
+                            <svg class="wc-step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M7 3h10v18H7z" />
+                                <path d="M7 3l4 2 4-2" />
+                                <path d="M9 9h6" />
+                                <path d="M9 13h6" />
+                                <path d="M9 17h4" />
+                            </svg>
+                            <h3 class="wc-step-title">Admission</h3>
+                            <p class="wc-step-caption">Complete admission and documentation.</p>
+                        </div>
+
+                        <span class="wc-step-arrow" aria-hidden="true">&#8594;</span>
+
+                        <div class="wc-step-item">
+                            <span class="wc-step-badge">5</span>
+                            <svg class="wc-step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 10L12 5 2 10l10 5 10-5z" />
+                                <path d="M6 12.5V17c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5" />
+                                <path d="M22 10v5" />
+                            </svg>
+                            <h3 class="wc-step-title">Begin Learning</h3>
+                            <p class="wc-step-caption">Welcome to the Kingsdale family!</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- ============================================================
-             J. TESTIMONIALS — WHAT PARENTS SAY
-             ============================================================ -->
-        <section class="section testimonials">
-            <div class="container">
-                <div class="section-heading heading-dots">
-                    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-                    <h2 class="section-title">What Parents Say</h2>
-                    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-                </div>
-
-                <div class="testimonial-grid">
-                    <article class="testimonial-card">
-                        <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
-                        <p>
-                            Kingsdale has transformed my daughter. She is confident, prayerful and excited to go
-                            to school every single morning. The teachers genuinely love the children.
-                        </p>
-                        <footer>
-                            <span class="t-avatar ta-1"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=150&q=80" alt="Mrs. Adaku M." loading="lazy"></span>
-                            <cite>
-                                <strong>Mrs. Adaku M.</strong>
-                                <small>Parent</small>
-                            </cite>
-                        </footer>
-                    </article>
-
-                    <article class="testimonial-card">
-                        <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
-                        <p>
-                            The blend of Montessori learning and Christian values is exactly what we wanted for
-                            our boys. Their independence and love for reading have grown so much.
-                        </p>
-                        <footer>
-                            <span class="t-avatar ta-2"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Mr. Chinedu O." loading="lazy"></span>
-                            <cite>
-                                <strong>Mr. Chinedu O.</strong>
-                                <small>Parent</small>
-                            </cite>
-                        </footer>
-                    </article>
-
-                    <article class="testimonial-card">
-                        <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
-                        <p>
-                            Small classes, caring staff and a safe environment. I recommend Kingsdale to every
-                            parent who wants their child raised with strong values.
-                        </p>
-                        <footer>
-                            <span class="t-avatar ta-3"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Mrs. Blessing A." loading="lazy"></span>
-                            <cite>
-                                <strong>Mrs. Blessing A.</strong>
-                                <small>Parent</small>
-                            </cite>
-                        </footer>
-                    </article>
-                </div>
-
-                <div class="carousel-dots" aria-label="Testimonial pagination">
-                    <span class="dot is-active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================
-             K. ADMISSIONS PROCESS
-             ============================================================ -->
-        <section class="section admissions" id="admissions">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">Getting Started</p>
-                    <h2 class="section-title">Admissions Process</h2>
-                </div>
-
-                <ol class="steps">
-                    <li class="step">
-                        <span class="step-num step-num--blue">1</span>
-                        <h3>Make an Enquiry</h3>
-                        <p>Contact us or fill our enquiry form to begin the conversation.</p>
-                    </li>
-                    <li class="step-connect" aria-hidden="true">
-                        <svg viewBox="0 0 64 24" fill="none" preserveAspectRatio="none">
-                            <path d="M4 12 H 52" stroke="#0052CC" stroke-width="2.5" stroke-dasharray="6 6" stroke-linecap="round"/>
-                            <path d="M50 5 L 60 12 L 50 19" stroke="#0052CC" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </li>
-                    <li class="step">
-                        <span class="step-num step-num--red">2</span>
-                        <h3>Visit the School</h3>
-                        <p>Book a tour and experience our classrooms first-hand.</p>
-                    </li>
-                    <li class="step-connect" aria-hidden="true">
-                        <svg viewBox="0 0 64 24" fill="none" preserveAspectRatio="none">
-                            <path d="M4 12 H 52" stroke="#0052CC" stroke-width="2.5" stroke-dasharray="6 6" stroke-linecap="round"/>
-                            <path d="M50 5 L 60 12 L 50 19" stroke="#0052CC" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </li>
-                    <li class="step">
-                        <span class="step-num step-num--blue">3</span>
-                        <h3>Assessment</h3>
-                        <p>We meet your child in a relaxed, friendly environment.</p>
-                    </li>
-                    <li class="step-connect" aria-hidden="true">
-                        <svg viewBox="0 0 64 24" fill="none" preserveAspectRatio="none">
-                            <path d="M4 12 H 52" stroke="#0052CC" stroke-width="2.5" stroke-dasharray="6 6" stroke-linecap="round"/>
-                            <path d="M50 5 L 60 12 L 50 19" stroke="#0052CC" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </li>
-                    <li class="step">
-                        <span class="step-num step-num--red">4</span>
-                        <h3>Admission</h3>
-                        <p>Complete the enrolment forms and reserve your child's place.</p>
-                    </li>
-                    <li class="step-connect" aria-hidden="true">
-                        <svg viewBox="0 0 64 24" fill="none" preserveAspectRatio="none">
-                            <path d="M4 12 H 52" stroke="#0052CC" stroke-width="2.5" stroke-dasharray="6 6" stroke-linecap="round"/>
-                            <path d="M50 5 L 60 12 L 50 19" stroke="#0052CC" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </li>
-                    <li class="step">
-                        <span class="step-num step-num--blue">5</span>
-                        <h3>Begin Learning</h3>
-                        <p>Welcome to Kingsdale — your child's journey begins!</p>
-                    </li>
-                </ol>
-            </div>
         </section>
 
         <!-- ============================================================

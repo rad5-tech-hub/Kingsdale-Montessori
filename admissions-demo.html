@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingsdale Montessori — Why Choose Us &amp; Admissions Process</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        /* ==========================================================================
+           KINGSDALE MONTESSORI — SECTION 3 (Why Choose / Admissions Process)
+           ========================================================================== */
+
+        :root {
+            --navy: #1B2A6B;
+            --blue: #2E5AAC;
+            --red: #E63946;
+            --green: #3CB878;
+            --purple: #8B5CF6;
+            --gold: #F2B90C;
+            --gray: #6B7280;
+            --tint: #EEF1FB;
+            --card-border: #E8EAF3;
+            --ink: #3A3F55;
+
+            --font-heading: "Baloo 2", "Quicksand", "Segoe UI", sans-serif;
+            --font-body: "Poppins", "Nunito Sans", "Segoe UI", sans-serif;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: #FFFFFF;
+            color: var(--gray);
+        }
+
+        img,
+        svg {
+            display: block;
+            max-width: 100%;
+        }
+
+        /* ----------------------------------------------------------------
+           SECTION SHELL
+           ---------------------------------------------------------------- */
+        .welcome-section {
+            background: #FFFFFF;
+            padding: 60px 24px;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin-inline: auto;
+        }
+
+        /* ----------------------------------------------------------------
+           TOP ROW — THREE-PANEL TINTED BAND
+           ---------------------------------------------------------------- */
+        .band {
+            background: var(--tint);
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            align-items: stretch;
+        }
+
+        .panel {
+            background: #FFFFFF;
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 1px 2px rgba(27, 42, 107, 0.04), 0 8px 24px -12px rgba(27, 42, 107, 0.12);
+            transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .panel:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 2px 4px rgba(27, 42, 107, 0.05), 0 16px 36px -14px rgba(27, 42, 107, 0.18);
+        }
+
+        .panel--why {
+            flex: 0 0 24%;
+            max-width: 24%;
+        }
+
+        .panel--stats {
+            flex: 0 0 42%;
+            max-width: 42%;
+        }
+
+        .panel--testi {
+            flex: 0 0 34%;
+            max-width: 34%;
+        }
+
+        .panel-title {
+            font-family: var(--font-heading);
+            font-size: 15px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: var(--navy);
+            letter-spacing: 0.4px;
+            margin-bottom: 16px;
+        }
+
+        .panel-title--center {
+            text-align: center;
+        }
+
+        /* ---------- CARD 1: WHY CHOOSE KINGSDALE ---------- */
+        .checklist {
+            list-style: none;
+        }
+
+        .checklist li {
+            display: flex;
+            align-items: flex-start;
+            gap: 9px;
+            margin-bottom: 10px;
+        }
+
+        .check {
+            flex-shrink: 0;
+            width: 18px;
+            height: 18px;
+            margin-top: 1px;
+            color: var(--blue);
+            stroke-width: 2.6;
+        }
+
+        .checklist li p {
+            font-size: 13px;
+            line-height: 1.5;
+            color: var(--ink);
+            font-weight: 500;
+        }
+
+        .stars {
+            display: flex;
+            gap: 2px;
+            margin-top: 16px;
+            align-items: center;
+        }
+
+        .stars svg {
+            width: 22px;
+            height: 22px;
+            color: var(--gold);
+            fill: var(--gold);
+            flex-shrink: 0;
+        }
+
+        .stars svg:nth-child(2) {
+            transform: rotate(-12deg) translateY(2px);
+        }
+
+        .stars svg:nth-child(3) {
+            transform: rotate(10deg) translateY(-2px) translateX(-2px);
+        }
+
+        /* ---------- CARD 2: STATS ROW ---------- */
+        .stats-row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+        }
+
+        .stat-col {
+            flex: 1 1 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            text-align: center;
+            position: relative;
+        }
+
+        .stat-col + .stat-col::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 6px;
+            bottom: 6px;
+            width: 1px;
+            background: var(--card-border);
+        }
+
+        .stat-col:nth-child(1) {
+            color: var(--navy);
+        }
+
+        .stat-col:nth-child(2) {
+            color: var(--red);
+        }
+
+        .stat-col:nth-child(3) {
+            color: var(--green);
+        }
+
+        .stat-col:nth-child(4) {
+            color: var(--purple);
+        }
+
+        .stat-col:nth-child(5) {
+            color: var(--navy);
+        }
+
+        .stat-col svg.stat-icon {
+            width: 44px;
+            height: 44px;
+            stroke-width: 2.4;
+            filter: drop-shadow(0 4px 6px rgba(27, 42, 107, 0.10));
+            transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .stat-col:hover svg.stat-icon {
+            transform: translateY(-2px) scale(1.05);
+        }
+
+        .stat-num {
+            font-family: var(--font-heading);
+            font-weight: 800;
+
+            font-size: 24px;
+            color: inherit;
+            line-height: 1.2;
+        }
+
+        .stat-num--green {
+            font-size: 16px;
+        }
+
+        .stat-num--navy-dark {
+            color: var(--navy);
+            font-size: 16px;
+        }
+
+        .stat-cap {
+            font-family: var(--font-heading);
+            font-size: 12px;
+            font-weight: 800;
+            color: var(--navy);
+            line-height: 1.3;
+            max-width: 10em;
+        }
+
+        /* ---------- CARD 3: WHAT PARENTS SAY ---------- */
+        .testi-row {
+            display: flex;
+            gap: 10px;
+            align-items: stretch;
+        }
+
+        .mini-card {
+            flex: 1 1 0;
+            min-width: 0;
+            background: #F7F9FD;
+            border: 1px solid #EEF0F7;
+            border-radius: 12px;
+            padding: 14px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .mini-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px -10px rgba(27, 42, 107, 0.14);
+        }
+
+        .quote-glyph {
+            font-family: var(--font-heading);
+            color: #B9C6EE;
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 0.5;
+            height: 15px;
+            margin-bottom: 10px;
+        }
+
+        .mini-card blockquote {
+            font-size: 11px;
+            line-height: 1.4;
+            color: var(--ink);
+            font-weight: 400;
+            font-style: italic;
+            margin: 0;
+        }
+
+        .testi-person {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            border: 2px solid #FFFFFF;
+            box-shadow: 0 2px 6px rgba(27, 42, 107, 0.15);
+        }
+
+        .testi-name {
+            font-family: var(--font-heading);
+            font-size: 11px;
+            font-weight: 800;
+            color: var(--navy);
+            line-height: 1.2;
+        }
+
+        .testi-role {
+            font-size: 10px;
+            color: var(--gray);
+            line-height: 1.2;
+            margin-top: 1px;
+        }
+
+        /* ----------------------------------------------------------------
+           DIVIDER — ADMISSIONS PROCESS
+           ---------------------------------------------------------------- */
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            margin: 40px 0 30px;
+        }
+
+        .divider .rule {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .divider .rule-line {
+            width: 55px;
+            height: 2px;
+            background: var(--navy);
+        }
+
+        .divider .rule-dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--navy);
+            flex-shrink: 0;
+        }
+
+        .divider h2 {
+            font-family: var(--font-heading);
+            font-size: 18px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--navy);
+            white-space: nowrap;
+        }
+
+        /* left rule: dot on outer (left) end */
+        .divider .rule--left {
+            flex-direction: row-reverse;
+        }
+
+        /* ----------------------------------------------------------------
+           ADMISSIONS PROCESS STEPS (full-width band)
+           ---------------------------------------------------------------- */
+        .steps-section {
+            background: var(--tint);
+            padding: 40px 24px;
+            width: 100%;
+        }
+
+        .steps-inner {
+            max-width: 1300px;
+            margin-inline: auto;
+        }
+
+        .steps-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .step-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            max-width: 180px;
+            text-align: center;
+        }
+
+        .step-badge {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-family: var(--font-heading);
+            font-size: 14px;
+            font-weight: 800;
+            color: #FFFFFF;
+            background: var(--navy);
+            box-shadow: 0 4px 10px -3px rgba(27, 42, 107, 0.35);
+        }
+
+        .step-badge--red {
+            background: var(--red);
+            box-shadow: 0 4px 10px -3px rgba(230, 57, 70, 0.35);
+        }
+
+        .steps-row > div:nth-of-type(odd) .step-icon {
+            color: var(--navy);
+        }
+
+        .steps-row > div:nth-of-type(even) .step-icon {
+            color: var(--red);
+        }
+
+        .step-icon {
+            width: 36px;
+            height: 36px;
+            stroke-width: 2.4;
+            filter: drop-shadow(0 3px 5px rgba(27, 42, 107, 0.10));
+            margin-top: 6px;
+        }
+
+        .step-title {
+            font-family: var(--font-heading);
+            font-size: 13px;
+            font-weight: 800;
+            color: var(--navy);
+            line-height: 1.3;
+        }
+
+        .step-caption {
+            font-size: 11.5px;
+            line-height: 1.4;
+            color: var(--gray);
+            font-weight: 400;
+            max-width: 150px;
+        }
+
+        .step-arrow {
+            align-self: center;
+            color: var(--red);
+            font-size: 18px;
+            font-weight: 800;
+            flex-shrink: 0;
+            line-height: 1;
+            font-family: var(--font-body);
+            margin-top: 26px;
+        }
+
+        .step-item .step-arrow {
+            margin-top: 0;
+        }
+
+        /* ==========================================================================
+           RESPONSIVE
+           ========================================================================== */
+        @media (max-width: 1024px) {
+            .band {
+                flex-direction: column;
+            }
+
+            .panel--why,
+            .panel--stats,
+            .panel--testi {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+
+            .steps-row {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px 24px;
+            }
+
+            .step-arrow {
+                display: none;
+            }
+
+            .step-item {
+                flex-basis: calc(33.33% - 24px);
+                max-width: 180px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .welcome-section {
+                padding: 44px 12px;
+            }
+
+            .band {
+                padding: 12px;
+            }
+
+            .panel {
+                padding: 16px;
+            }
+
+            .stats-row {
+                flex-wrap: wrap;
+                gap: 16px 8px;
+            }
+
+            .stat-col {
+                flex: 1 1 calc(50% - 8px);
+                max-width: calc(50% - 8px);
+            }
+
+            .stat-col + .stat-col::before {
+                display: none;
+            }
+
+            .stat-col:nth-child(3)::before {
+                display: none;
+            }
+
+            .testi-row {
+                flex-direction: column;
+            }
+
+            .divider .rule-line {
+                width: 40px;
+            }
+
+            .divider h2 {
+                font-size: 15px;
+            }
+
+            .steps-row {
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+            }
+
+            .step-item {
+                flex-basis: auto;
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="welcome-section" aria-label="Why choose Kingsdale and admissions process">
+        <div class="container">
+
+            <!-- ==========================================================
+                 TOP ROW — THREE-PANEL TINTED BAND
+                 ========================================================== -->
+            <div class="band">
+
+                <!-- CARD 1: WHY CHOOSE KINGSDALE? -->
+                <article class="panel panel--why">
+                    <h2 class="panel-title">Why Choose Kingsdale?</h2>
+                    <ul class="checklist">
+                        <li>
+                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9" />
+                                <path d="M8.5 12.5l2.5 2.5 5-5" />
+                            </svg>
+                            <p>Montessori Standard of Education</p>
+                        </li>
+                        <li>
+                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9" />
+                                <path d="M8.5 12.5l2.5 2.5 5-5" />
+                            </svg>
+                            <p>Christian foundation and values</p>
+                        </li>
+                        <li>
+                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9" />
+                                <path d="M8.5 12.5l2.5 2.5 5-5" />
+                            </svg>
+                            <p>Highly trained and passionate teachers</p>
+                        </li>
+                        <li>
+                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9" />
+                                <path d="M8.5 12.5l2.5 2.5 5-5" />
+                            </svg>
+                            <p>Safe, clean and child-friendly environment</p>
+                        </li>
+                        <li>
+                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9" />
+                                <path d="M8.5 12.5l2.5 2.5 5-5" />
+                            </svg>
+                            <p>Holistic development of the whole child</p>
+                        </li>
+                        <li>
+                            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9" />
+                                <path d="M8.5 12.5l2.5 2.5 5-5" />
+                            </svg>
+                            <p>Strong partnership with parents</p>
+                        </li>
+                    </ul>
+
+                    <div class="stars" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26" />
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26" />
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26" />
+                        </svg>
+                    </div>
+                </article>
+
+                <!-- CARD 2: STATS ROW -->
+                <article class="panel panel--stats">
+                    <div class="stats-row">
+
+                        <div class="stat-col">
+                            <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="5.4" />
+                                <path d="M12 3.2v2.2" />
+                                <path d="M12 18.6v2.2" />
+                                <path d="M3.2 12h2.2" />
+                                <path d="M18.6 12h2.2" />
+                            </svg>
+                            <span class="stat-num">10+</span>
+                            <span class="stat-cap">Years of Quality Education</span>
+                        </div>
+
+                        <div class="stat-col">
+                            <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 20c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5" />
+                            </svg>
+                            <span class="stat-num stat-num--red">500+</span>
+                            <span class="stat-cap">Happy Students and Growing</span>
+                        </div>
+
+                        <div class="stat-col">
+                            <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6z" />
+                                <path d="M8.5 12l2.5 2.5 4.5-4.5" />
+                            </svg>
+                            <span class="stat-num stat-num--green">Qualified &amp;</span>
+                            <span class="stat-cap">Passionate Teachers</span>
+                        </div>
+
+                        <div class="stat-col">
+                            <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6z" />
+                                <path d="M12 8l1.5 5-1.5 3-1.5-3z" />
+                            </svg>
+                            <span class="stat-num stat-num--purple">100%</span>
+                            <span class="stat-cap">Safe &amp; Secure Environment</span>
+                        </div>
+
+                        <div class="stat-col">
+                            <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M8 21h8" />
+                                <path d="M9 21a1 1 0 0 1-1-1V8a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v12a1 1 0 0 1-1 1" />
+                                <path d="M12 3v3" />
+                                <path d="M4 6.5h5v3H4z" />
+                                <path d="M15 6.5h5v3h-5z" />
+                            </svg>
+                            <span class="stat-num stat-num--navy-dark">Caring &amp;</span>
+                            <span class="stat-cap">Supportive Community</span>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- CARD 3: WHAT PARENTS SAY -->
+                <article class="panel panel--testi">
+                    <h2 class="panel-title panel-title--center">What Parents Say</h2>
+                    <div class="testi-row">
+
+                        <div class="mini-card">
+                            <span class="quote-glyph" aria-hidden="true">&ldquo;</span>
+                            <blockquote>Kingsdale has been a blessing to our family. My child has grown in confidence,
+                                discipline and in the fear of God.</blockquote>
+                            <div class="testi-person">
+                                <img class="avatar"
+                                    src="https://i.pravatar.cc/80?img=32"
+                                    alt="Portrait of Mrs. Adoku M.">
+                                <div>
+                                    <p class="testi-name">Mrs. Adoku M.</p>
+                                    <p class="testi-role">Parent</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mini-card">
+                            <span class="quote-glyph" aria-hidden="true">&ldquo;</span>
+                            <blockquote>The teachers are amazing! My son is learning so much and always happy to go to
+                                school.</blockquote>
+                            <div class="testi-person">
+                                <img class="avatar"
+                                    src="https://i.pravatar.cc/80?img=12"
+                                    alt="Portrait of Mr. Chinedu O.">
+                                <div>
+                                    <p class="testi-name">Mr. Chinedu O.</p>
+                                    <p class="testi-role">Parent</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mini-card">
+                            <span class="quote-glyph" aria-hidden="true">&ldquo;</span>
+                            <blockquote>A safe, loving and excellent environment. My daughter is thriving academically and
+                                spiritually.</blockquote>
+                            <div class="testi-person">
+                                <img class="avatar"
+                                    src="https://i.pravatar.cc/80?img=45"
+                                    alt="Portrait of Mrs. Blessing A.">
+                                <div>
+                                    <p class="testi-name">Mrs. Blessing A.</p>
+                                    <p class="testi-role">Parent</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- ==========================================================
+                 DIVIDER — ADMISSIONS PROCESS
+                 ========================================================== -->
+            <div class="divider" role="presentation">
+                <span class="rule rule--left" aria-hidden="true">
+                    <span class="rule-dot"></span>
+                    <span class="rule-line"></span>
+                </span>
+                <h2>Admissions Process</h2>
+                <span class="rule" aria-hidden="true">
+                    <span class="rule-line"></span>
+                    <span class="rule-dot"></span>
+                </span>
+            </div>
+
+        </div>
+
+        <!-- ==========================================================
+             ADMISSIONS PROCESS STEPS (full-width band)
+             ========================================================== -->
+        <div class="steps-section">
+            <div class="steps-inner">
+                <div class="steps-row">
+
+                    <div class="step-item">
+                        <span class="step-badge">1</span>
+                        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5c-1.5 0-2.9-.4-4.1-1l-4 1 1-3.9a8.5 8.5 0 1 1 15.6-4.6z" />
+                            <path d="M9 11h6" />
+                            <path d="M9 14h4" />
+                        </svg>
+                        <h3 class="step-title">Make an Enquiry</h3>
+                        <p class="step-caption">Contact us to learn more about our school.</p>
+                    </div>
+
+                    <span class="step-arrow" aria-hidden="true">&#8594;</span>
+
+                    <div class="step-item">
+                        <span class="step-badge step-badge--red">2</span>
+                        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="5" width="18" height="16" rx="2" />
+                            <path d="M16 3v4" />
+                            <path d="M8 3v4" />
+                            <path d="M3 10h18" />
+                            <path d="M8 14h.01" />
+                            <path d="M12 14h.01" />
+                            <path d="M16 14h.01" />
+                        </svg>
+                        <h3 class="step-title">Visit the School</h3>
+                        <p class="step-caption">Schedule a tour and meet our teachers.</p>
+                    </div>
+
+                    <span class="step-arrow" aria-hidden="true">&#8594;</span>
+
+                    <div class="step-item">
+                        <span class="step-badge">3</span>
+                        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="5" y="3" width="14" height="18" rx="2" />
+                            <path d="M9 3v3h6V3" />
+                            <path d="M9 11l2 2 4-4" />
+                            <path d="M9 16h6" />
+                        </svg>
+                        <h3 class="step-title">Assessment</h3>
+                        <p class="step-caption">Child assessment and placement.</p>
+                    </div>
+
+                    <span class="step-arrow" aria-hidden="true">&#8594;</span>
+
+                    <div class="step-item">
+                        <span class="step-badge step-badge--red">4</span>
+                        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M7 3h10v18H7z" />
+                            <path d="M7 3l4 2 4-2" />
+                            <path d="M9 9h6" />
+                            <path d="M9 13h6" />
+                            <path d="M9 17h4" />
+                        </svg>
+                        <h3 class="step-title">Admission</h3>
+                        <p class="step-caption">Complete admission and documentation.</p>
+                    </div>
+
+                    <span class="step-arrow" aria-hidden="true">&#8594;</span>
+
+                    <div class="step-item">
+                        <span class="step-badge">5</span>
+                        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M22 10L12 5 2 10l10 5 10-5z" />
+                            <path d="M6 12.5V17c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5" />
+                            <path d="M22 10v5" />
+                        </svg>
+                        <h3 class="step-title">Begin Learning</h3>
+                        <p class="step-caption">Welcome to the Kingsdale family!</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
