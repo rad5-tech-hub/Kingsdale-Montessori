@@ -1752,6 +1752,15 @@ h4 {
     background: #1ebe57;
 }
 
+/* TikTok brand-style button */
+.social--tt {
+    background: linear-gradient(135deg, #69C9D0 0%, #EE1D52 100%);
+}
+
+.social--tt:hover {
+    filter: brightness(0.92);
+}
+
 .footer-socials p {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.7);
